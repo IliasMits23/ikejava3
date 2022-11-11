@@ -16,7 +16,11 @@ public class Iekjava {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int x=20;
+        int y=18;
+        if (20>18){
+            System.out.println("20 is greater of 18");
+        }
     }
     
 }
