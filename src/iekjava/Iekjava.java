@@ -41,8 +41,8 @@ public class Iekjava {
         salary=console.nextDouble();
         
        printstat();
-       getage(); 
-        
+       getAge(); 
+       getSalary(); 
            
         
     }
