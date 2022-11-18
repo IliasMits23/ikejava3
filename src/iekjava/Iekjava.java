@@ -15,19 +15,19 @@ import java.util.Scanner;
  */
 public class Iekjava {
    
-    static public String name;
-   static public char age;
+   static public String name;
+   static public int  age;
    static public char gender;
    static public double salary;
    static public boolean Adult;
    static public boolean  female;
+   
    public static void main(String[] args) {
-        int x=20;
-        int y=18;
-        if (20>18){
-            System.out.println("20 is greater of 18");
+        
                    
-                    }
+          Employers emp1=new Employers("kostas","M");
+          Emlpoyers emp1
+          
          String name;
          int age;
          char gander;
@@ -39,7 +39,7 @@ public class Iekjava {
         name=console.nextLine();
         System.out.println("enter age:");
         age=console.nextInt();
-        System.out.println("enter gander:");
+        System.out.println("enter gender:");
         gander=console.next().charAt(0);
         System.out.println("enter salary");
         salary=console.nextDouble();
@@ -48,8 +48,7 @@ public class Iekjava {
        printstat();
        getAge(); 
        getSalary(); 
-          
-        
+       getGender(); 
     }
    static public  void printstat(){
         
@@ -90,9 +89,18 @@ public class Iekjava {
       }
       return  female;
     }
-  }
-      
-      
+     
+static void setSalary(double x){
+        salary=x;
+}
 
-
-
+static void setAge(int y){
+    age=y;
+}
+    static void setName(String k){
+    name=k;
+}  
+    static void setGender(char p){
+    gender=p;
+}  
+}    
