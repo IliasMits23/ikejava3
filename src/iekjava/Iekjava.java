@@ -16,9 +16,11 @@ import java.util.Scanner;
 public class Iekjava {
    
     static public String name;
-   static public int age;
-   static public char gander;
+   static public char age;
+   static public char gender;
    static public double salary;
+   static public boolean Adult;
+   static public boolean  female;
    public static void main(String[] args) {
         int x=20;
         int y=18;
@@ -30,6 +32,8 @@ public class Iekjava {
          int age;
          char gander;
          double salary;
+         char genre;   
+
         Scanner console=new Scanner(System.in);
         System.out.println("enter name:");
         name=console.nextLine();
@@ -39,16 +43,17 @@ public class Iekjava {
         gander=console.next().charAt(0);
         System.out.println("enter salary");
         salary=console.nextDouble();
-        
+       
+
        printstat();
        getAge(); 
        getSalary(); 
-           
+          
         
     }
    static public  void printstat(){
         
-       System.out.println("name:"+name+"age:"+age+"gander:"+gander+"salary"+salary);
+       System.out.println("name:"+name+"age:"+age+"gender:"+gender+"salary"+salary);
    }
 
     
@@ -60,4 +65,34 @@ public class Iekjava {
        
        return salary;
    }
-}
+   static boolean isAdult(){
+    if(age>10){
+        Adult=true;
+    }
+    else{
+        Adult=false;
+    }
+    return Adult;
+    }
+  
+        
+      
+   
+  static char getGender(){
+      return gender;
+  }
+  static boolean isFemale(){
+      if(getGender()=='F'){
+          female=false;
+      }
+      else{
+          female=true;
+      }
+      return  female;
+    }
+  }
+      
+      
+
+
+
