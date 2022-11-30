@@ -25,22 +25,16 @@ public class Iekjava {
    public static void main(String[] args) {
         
                    
-          Employers emp1=new Employers("kostas","M");
-          Emlpoyers emp1
-          
-         String name;
-         int age;
-         char gander;
-         double salary;
-         char genre;   
-
+         Employers emp1=new Employers("kostas","M",30,600); 
+         
+         
         Scanner console=new Scanner(System.in);
         System.out.println("enter name:");
         name=console.nextLine();
         System.out.println("enter age:");
         age=console.nextInt();
         System.out.println("enter gender:");
-        gander=console.next().charAt(0);
+        gender=console.next().charAt(0);
         System.out.println("enter salary");
         salary=console.nextDouble();
        
@@ -49,6 +43,8 @@ public class Iekjava {
        getAge(); 
        getSalary(); 
        getGender(); 
+       isAdult();
+       isFemale();
     }
    static public  void printstat(){
         
@@ -67,9 +63,11 @@ public class Iekjava {
    static boolean isAdult(){
     if(age>10){
         Adult=true;
+         System.out.println("is adult");
     }
     else{
         Adult=false;
+        System.out.println("is not adult");
     }
     return Adult;
     }
@@ -83,9 +81,11 @@ public class Iekjava {
   static boolean isFemale(){
       if(getGender()=='F'){
           female=false;
+           System.out.println("is famele");
       }
       else{
           female=true;
+          System.out.println("is male");
       }
       return  female;
     }
